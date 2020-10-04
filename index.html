@@ -1,0 +1,70 @@
+<html>
+    <head</head>
+     
+       <script>
+           function inputtext(number)
+           {
+               var value = document.getElementById("ansbox").value
+               document.getElementById("ansbox").value = value + number
+           }
+           function equalans(){
+              var value= document.getElementById("ansbox").value
+
+            
+              var answer = eval(value);
+              document.getElementById("ansbox").value  = answer;
+           }
+           function ac()
+               
+               {
+   
+document.getElementById("ansbox").value="";
+
+               }
+               function acc(){
+                  var ans =document.getElementById("ansbox").value;
+ans.substr(ans.length-1)    
+           }
+           </script>
+        
+    <body style="margin-left: 489px;
+    margin-top: 17px;">
+        <div >
+        <div style=" text-align: center; border-style: solid;width:370px;border-radius: 20px; background-color:rgb(23, 162, 187);">
+        
+<h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">calculator </h1> 
+<input type="text" id="ansbox" value="" readonly style="width: 338px;height:100px; font-size: xx-large;border-radius: 20px;border-style: inherit;border-color: black;font-style:inherit;">
+<br>
+<br>
+<input type="button" id="allclear" value="ac" style="width: 80;height: 80; margin-right: auto; font-size:40px;color:black; background-color:gray;border-radius: 50px;border-style:ridge;" onclick="ac()">
+<input type="button" id="per" value="%" style="width: 80;height:80; margin-right: auto;font-size:40px;color:black; background-color:grey;border-radius: 50px;border-style:ridge"onclick="inputtext('%')">
+<input type="button" id="clear" value="c" style="width: 80;height: 80; margin-right: auto;font-size:40px;color:black; background-color:grey;border-radius: 50px; border-style:ridge" onclick="acc()">
+<input type="button" id="valadd" value="+" style="width: 80;height: 80; margin-right: auto;font-size:40px; color:black; background-color:grey;border-radius: 50px;border-style:ridge " onclick="inputtext('+')" >
+
+<br>
+<input type="button" id="num1" value="1" style="width: 80;height:80; margin-right: auto;font-size: xx-large ; color:white; background-color: black;border-radius: 50px;border-style:ridge " onclick="inputtext(1)" >
+
+<input type="button" id="num2" value="2" style="width: 80;height:80; margin-right: auto;font-size: xx-large ; color:white; background-color: black;border-radius: 50px;border-style:ridge " onclick="inputtext(2)" >
+<input type="button" id="num3" value="3" style="width: 80;height: 80; margin-right: auto;font-size:xx-large ; color:white; background-color: black; border-radius: 50px;border-style:ridge" onclick="inputtext(3)" >
+<input type="button" id="valsub" value="-" style="width: 80;height: 80; margin-right: auto;font-size:40px; color:black; background-color:grey; border-radius: 50px;border-style:ridge"onclick="inputtext('-')">
+
+<br>
+<input type="button" id="num4" value="4" style="width: 80;height: 80; margin-right: auto;font-size:xx-large ; color:white; background-color: black; border-radius: 50px;border-style:ridge"onclick="inputtext(4)">
+<input type="button" id="num5" value="5" style="width: 80;height:80; margin-right: auto;font-size: xx-large ;color:white; background-color: black; border-radius: 50px;border-style:ridge"onclick="inputtext(5)">
+<input type="button" id="num6" value="6" style="width: 80;height: 80; margin-right: auto;font-size:xx-large ; color:white; background-color: black;border-radius: 50px;border-style:ridge "onclick="inputtext(6)">
+<input type="button" id="valmulti" value="*" style="width: 80;height: 80; margin-right: auto;font-size: 40px;color:black; background-color:grey;border-radius: 50px;border-style:ridge"onclick="inputtext('*')">
+<br>
+<input type="button" id="num7" value="7" style="width: 80;height: 80; margin-right: auto;font-size:xx-large; color:white; background-color: black; border-radius: 50px;border-style:ridge"onclick="inputtext(7)">
+<input type="button" id="num8" value="8" style="width: 80;height:80; margin-right: auto;font-size: xx-large; color:white; background-color: black; border-radius: 50px;border-style:ridge"onclick="inputtext(8)">
+<input type="button" id="num9" value="9" style="width: 80;height: 80; margin-right: auto;font-size:xx-large ; color:white; background-color: black; border-radius: 50px;border-style:ridge"onclick="inputtext(9)">
+<input type="button" id="valdivide" value="÷" style="width: 80;height: 80; margin-right: auto;font-size: 40px;color:black; background-color:grey; border-radius: 50px; border-style:ridge"onclick="inputtext('/')"> 
+<br>
+<input type="button" id="num0" value="0" style="width: 163px;height: 80; margin-right: auto;font-size:xx-large ; color:white; background-color: black; border-radius: 50px;border-style:ridge"onclick="inputtext(0)">
+<input type="button" id="dot" value="." style="width: 80;height: 80; margin-right: auto;font-size:40px; color:white; background-color: black; border-radius: 50px;border-style:ridge"onclick="inputtext('.')">
+<input type="button" id="valans" value="=" style="width: 80;height: 80; margin-right: auto;font-size: xx-large;border-radius: 50px;border-style:ridge" onclick="equalans()" > 
+</div>
+</div>
+    </body>
+    
+</html>
+
