@@ -12,15 +12,12 @@
            }
            function equalans(){
               var value= document.getElementById("ansbox").value
-              if(typeof value=='string'){
-                  document.getElementById("ansbox").innerHTML="SYNTAX ERROR"
-                  return false
-              }
 
-            else{
+        
               var answer = eval(value);
+              if(typeof answer =='number'){
               document.getElementById("ansbox").value  = answer;
-            }
+              }
             }
            function ac()
                
