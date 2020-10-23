@@ -12,6 +12,9 @@
            }
            function equalans(){
               var value= document.getElementById("ansbox").value
+              if(typeof value=='string'){
+                  document.getElementById("ansbox").innerHTML="SYNTAX ERROR"
+              }
 
             
               var answer = eval(value);
