@@ -7,15 +7,15 @@
        <script>
            function inputtext(number)
            {
-           var value = document.getElementById("ansbox").value
-  document.getElementById("ansbox").value =value + number
+           var values = document.getElementById("ansbox").value
+  document.getElementById("ansbox").value =values + number
            }
            function equalans(){
               var value= document.getElementById("ansbox").value
-
-        
-              var answer = eval(value);
-              document.getElementById("ansbox").value  = answer;
+              if (value.length > 0) {
+                var answer = eval(value); 
+                document.getElementById("ansbox").value  = answer;
+              }
             }
            function ac()
                
@@ -26,12 +26,15 @@ document.getElementById("ansbox").value="";
                }
                function acc(){
                   var ans =document.getElementById("ansbox").value;
- ans.substr(ans.length-1);
+                  if (ans.length > 0) {
+                    document.getElementById("ansbox").value = ans.substring(0, ans.length-1);
+                  }
            }
-           </script>
+  
+</script>
         
     <body>
-        
+     <h1></h1>
         <div >
         <div style=" text-align: center; margin:auto; border-style: solid;width:350px;border-radius: 20px; background-color:rgb(23, 162, 187);">
        
